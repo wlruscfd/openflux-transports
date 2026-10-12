@@ -7,8 +7,8 @@
       "wire": 1,
       "api": 1,
       "url": "mailru-1.2.0.flux",
-      "sha256": "b650e84f6ee7c32047743f8d546afb7b8d095ba4c3f497c5f17c69a178febb10",
-      "notes": "Browser-like headers, real cursor length"
+      "sha256": "47b4e1a8995bda6244c9a14c9635b2804385d00b65dfef4b64dba629715abc6a",
+      "notes": "Initial release"
     }
   }
 }

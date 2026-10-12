@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "boards",
+  "channels": {
+    "stable": {
+      "version": "1.1.0",
+      "wire": 1,
+      "api": 1,
+      "url": "boards-1.1.0.flux",
+      "sha256": "07898b2b5d4f96e5bbc46bf65ece4b9cc5c93ceaf1feaff19ec1b530c5939b59",
+      "notes": "Initial release"
+    }
+  }
+}

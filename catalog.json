@@ -5,6 +5,36 @@
       "id": "mailru",
       "name": "Mail.ru Docs",
       "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/mailru/update.json"
+    },
+    {
+      "id": "yandex",
+      "name": "Yandex Docs",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/yandex/update.json"
+    },
+    {
+      "id": "vyandex",
+      "name": "Yandex Volga",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/vyandex/update.json"
+    },
+    {
+      "id": "boards",
+      "name": "Yandex Boards",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/boards/update.json"
+    },
+    {
+      "id": "cupsonline",
+      "name": "Cups Online",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/cupsonline/update.json"
+    },
+    {
+      "id": "oneme-webrtc",
+      "name": "MAX (WebRTC)",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/oneme-webrtc/update.json"
+    },
+    {
+      "id": "oneme-iceinject",
+      "name": "MAX (ICE inject)",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/oneme-iceinject/update.json"
     }
   ]
 }

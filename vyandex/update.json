@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "vyandex",
+  "channels": {
+    "stable": {
+      "version": "1.1.0",
+      "wire": 1,
+      "api": 1,
+      "url": "vyandex-1.1.0.flux",
+      "sha256": "e206ff51399ed7227391effeebe9bf5b421d9e49bcf2389317d80737b06d8f1f",
+      "notes": "Initial release"
+    }
+  }
+}

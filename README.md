@@ -4,7 +4,7 @@ Signed transport packages that the OpenFlux app downloads and uses in place of i
 transport stays in the app as the fallback.
 
 - `catalog.json` lists the transports; the app reads it from `main`.
-- `<id>/manifest.json`, `<id>/src/<id>.js` are the source of a transport (JS, run by the app's script host).
+- `<id>/manifest.json`, `<id>/src/<id>.js` are the source of a transport (JS, run by the app's script host); shared code is in `lib/`.
 - `<id>/<id>-<version>.flux` is the signed package, `<id>/update.json` the index the app follows.
 
 ## How an update reaches a phone
@@ -24,3 +24,5 @@ python tools/build.py --server ../openflux-server --key /path/to/transports_priv
 
 Commit the new `.flux` and `update.json` together. A change of the wire format needs a new `wire` number and a matching
 node release.
+
+Transports: mailru, cupsonline, yandex, vyandex, boards, oneme-webrtc, oneme-iceinject. An app installs only the ones it can run in place of a built-in transport (currently mailru and cupsonline).

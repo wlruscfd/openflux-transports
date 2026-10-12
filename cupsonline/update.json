@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "cupsonline",
+  "channels": {
+    "stable": {
+      "version": "1.1.0",
+      "wire": 1,
+      "api": 1,
+      "url": "cupsonline-1.1.0.flux",
+      "sha256": "4502bb8b7e378a2f2b6f5c596626f39e73036aa1159e9637fefe0d19568f0ac8",
+      "notes": "Initial release"
+    }
+  }
+}

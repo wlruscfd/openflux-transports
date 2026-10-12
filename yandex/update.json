@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "yandex",
+  "channels": {
+    "stable": {
+      "version": "1.1.0",
+      "wire": 1,
+      "api": 1,
+      "url": "yandex-1.1.0.flux",
+      "sha256": "36f4e1c9b21a7f568d6ca1d284cce0edb3c0dd7f35f5c2fc718a364da65eba66",
+      "notes": "Initial release"
+    }
+  }
+}

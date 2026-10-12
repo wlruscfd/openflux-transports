@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "oneme-webrtc",
+  "channels": {
+    "stable": {
+      "version": "1.1.0",
+      "wire": 1,
+      "api": 1,
+      "url": "oneme-webrtc-1.1.0.flux",
+      "sha256": "f9226e04282ce292afecfd2ebd6a840e82ea3a4eb27d27393493354d5c8739d9",
+      "notes": "Initial release"
+    }
+  }
+}

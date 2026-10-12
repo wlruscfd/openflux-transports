@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "oneme-iceinject",
+  "channels": {
+    "stable": {
+      "version": "1.1.0",
+      "wire": 1,
+      "api": 1,
+      "url": "oneme-iceinject-1.1.0.flux",
+      "sha256": "44b56df23854008f8a9bcd9f5c82c5212d8d2f16fa475fb58dfdaeafc771a94b",
+      "notes": "Initial release"
+    }
+  }
+}
