@@ -114,11 +114,17 @@ function reconnectBackoff(n) {
   return d;
 }
 
-function scheduleReconnect(attempt) {
+// An edge that answers a page instead of the API gets asked slowly: 30 s doubling up to 5 min.
+function slowBackoff(n) {
+  var d = Math.min(30000 * Math.pow(2, Math.min(Math.max(n - 1, 0), 4)), 300000);
+  return d + Math.floor(Math.random() * (d / 4 + 1));
+}
+
+function scheduleReconnect(attempt, slow) {
   var next = attempt + 1;
   if (!running || next >= MAX_RECONNECT_ATTEMPTS) return;
   if (reconnectTimer) return; // one is already pending: a second would open a duplicate session
-  var d = reconnectBackoff(next);
+  var d = slow ? slowBackoff(next) : reconnectBackoff(next);
   reconnectTimer = setTimeout(function () {
     reconnectTimer = null;
     if (!running) return;
@@ -151,7 +157,14 @@ async function fetchDocInfo(link) {
   if (res.status !== 200) {
     throw new Error("mailru: api returned status " + res.status);
   }
-  var data = JSON.parse(res.body);
+  var data;
+  try {
+    data = JSON.parse(res.body);
+  } catch (e) {
+    var notJSON = new Error("mailru: API did not return JSON: status " + res.status + ", " + JSON.stringify(String(res.body).replace(/\s+/g, " ").slice(0, 200)));
+    notJSON.notJSON = true;
+    throw notJSON;
+  }
   var doc = data.document;
   if (!doc) throw new Error("mailru: document object missing");
   var editorConfig = data.editorConfig;
@@ -317,7 +330,7 @@ function connectToDoc(attempt) {
     } catch (e) {
       if (/\b(409|403)\b/.test(String(e))) uaIdx++;
       setState("reconnecting", String(e));
-      scheduleReconnect(attempt);
+      scheduleReconnect(attempt, !!(e && e.notJSON));
     }
   })();
 }
@@ -326,7 +339,7 @@ var Transport = {
   info: function () {
     return {
       name: "mailru",
-      version: "1.2.0",
+      version: "1.2.1",
       cookieDomain: "https://cloud.mail.ru/",
       mtu: 0, // unbounded - native mailru never fragments either
       reliable: false,

@@ -3,12 +3,12 @@
   "id": "mailru",
   "channels": {
     "stable": {
-      "version": "1.2.0",
+      "version": "1.2.1",
       "wire": 1,
       "api": 1,
-      "url": "mailru-1.2.0.flux",
-      "sha256": "47b4e1a8995bda6244c9a14c9635b2804385d00b65dfef4b64dba629715abc6a",
-      "notes": "Initial release"
+      "url": "mailru-1.2.1.flux",
+      "sha256": "1359c57f5b895153ee64a6f9f30b003e1d80259b86be4a85122842e02f53a848",
+      "notes": "Log the page the API answers instead of JSON and ask slowly"
     }
   }
 }

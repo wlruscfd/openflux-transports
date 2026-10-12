@@ -1,7 +1,7 @@
 {
   "id": "mailru",
   "name": "mailru",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "OpenFlux",
   "description": "Tunnel through the Mail.ru public-document coauthoring WebSocket.",
   "wire": 1,
