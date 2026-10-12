@@ -1,0 +1,12 @@
+{
+  "id": "mailru",
+  "name": "mailru",
+  "version": "1.2.0",
+  "author": "OpenFlux",
+  "description": "Tunnel through the Mail.ru public-document coauthoring WebSocket.",
+  "wire": 1,
+  "api": 1,
+  "update": [
+    "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/mailru/update.json"
+  ]
+}

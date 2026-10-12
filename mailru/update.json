@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "mailru",
+  "channels": {
+    "stable": {
+      "version": "1.2.0",
+      "wire": 1,
+      "api": 1,
+      "url": "mailru-1.2.0.flux",
+      "sha256": "b650e84f6ee7c32047743f8d546afb7b8d095ba4c3f497c5f17c69a178febb10",
+      "notes": "Browser-like headers, real cursor length"
+    }
+  }
+}

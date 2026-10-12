@@ -1,0 +1,10 @@
+{
+  "format": 1,
+  "transports": [
+    {
+      "id": "mailru",
+      "name": "Mail.ru Docs",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/mailru/update.json"
+    }
+  ]
+}
