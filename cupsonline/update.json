@@ -3,12 +3,12 @@
   "id": "cupsonline",
   "channels": {
     "stable": {
-      "version": "1.1.0",
+      "version": "1.1.1",
       "wire": 1,
       "api": 1,
-      "url": "cupsonline-1.1.0.flux",
-      "sha256": "4502bb8b7e378a2f2b6f5c596626f39e73036aa1159e9637fefe0d19568f0ac8",
-      "notes": "Initial release"
+      "url": "cupsonline-1.1.1.flux",
+      "sha256": "44d21df12532645c2dc501a0202d9526aa0c2a687caeba167f59816b46678fb5",
+      "notes": "cups.online: 8 KB messages, 22 KB batches, one message every 12 ms"
     }
   }
 }

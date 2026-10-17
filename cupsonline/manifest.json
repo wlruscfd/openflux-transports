@@ -1,7 +1,7 @@
 {
   "id": "cupsonline",
   "name": "cupsonline",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "OpenFlux",
   "description": "Tunnel through a cups.online live-coding room.",
   "wire": 1,

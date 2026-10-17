@@ -34,10 +34,10 @@ var ROOM_GONE_RETRY_MAX_MS = 30 * 60000;
 var ROOM_DEAD_AFTER_FAILS = 5;
 
 var BATCH_MAX_PACKETS = 256;
-var BATCH_MAX_BYTES = 11000;
-var MAX_MESSAGE_DATA = 4096;
+var BATCH_MAX_BYTES = 22000;
+var MAX_MESSAGE_DATA = 8192;
 var BATCH_TIMEOUT_MS = 2;
-var SEND_INTERVAL_MS = 18;
+var SEND_INTERVAL_MS = 12;
 var MAX_PAYLOAD_BYTES = 65535;
 var BYTES_PER_NUMBER = 6;
 
@@ -705,7 +705,7 @@ var Transport = {
   info: function () {
     return {
       name: "cupsonline",
-      version: "1.1.0",
+      version: "1.1.1",
       mtu: 0,
       reliable: false,
       ordered: false,
