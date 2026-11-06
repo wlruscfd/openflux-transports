@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "bitrix-call",
+  "channels": {
+    "stable": {
+      "version": "1.0.0",
+      "wire": 1,
+      "api": 1,
+      "url": "bitrix-call-1.0.0.flux",
+      "sha256": "3b069aceaab2c20b5f1e631ee35c6bdaa7bd8aceb1343a1a9d6d88c8e38f877d",
+      "notes": "bitrix-call 1.0.0: the Bitrix24 video call bus transport, signed with the fork key"
+    }
+  }
+}

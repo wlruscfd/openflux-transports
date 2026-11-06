@@ -45,6 +45,11 @@
       "id": "oneme-iceinject",
       "name": "MAX (ICE inject)",
       "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/oneme-iceinject/update.json"
+    },
+    {
+      "id": "bitrix-call",
+      "name": "Bitrix24 Call",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/bitrix-call/update.json"
     }
   ]
 }
