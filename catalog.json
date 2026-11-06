@@ -27,6 +27,16 @@
       "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/cupsonline/update.json"
     },
     {
+      "id": "bitrix",
+      "name": "Bitrix24 Board",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/bitrix/update.json"
+    },
+    {
+      "id": "pruffme",
+      "name": "PRUFFME",
+      "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/pruffme/update.json"
+    },
+    {
       "id": "oneme-webrtc",
       "name": "MAX (WebRTC)",
       "update": "https://raw.githubusercontent.com/wlruscfd/openflux-transports/main/oneme-webrtc/update.json"

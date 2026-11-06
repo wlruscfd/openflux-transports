@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "pruffme",
+  "channels": {
+    "stable": {
+      "version": "1.2.0",
+      "wire": 1,
+      "api": 1,
+      "url": "pruffme-1.2.0.flux",
+      "sha256": "4019092da9b0bdc945d259bfe61930df531998f983d1e24d8c8799e395f29b36",
+      "notes": "pruffme 1.2.0: the polished upstream source, signed with the fork key"
+    }
+  }
+}

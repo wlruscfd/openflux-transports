@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "id": "bitrix",
+  "channels": {
+    "stable": {
+      "version": "1.1.0",
+      "wire": 1,
+      "api": 1,
+      "url": "bitrix-1.1.0.flux",
+      "sha256": "60730b82c982a8a3f5251f804c7642b64a93d5c05455cb4f63b893a71e7363f8",
+      "notes": "bitrix 1.1.0: the polished upstream source, signed with the fork key"
+    }
+  }
+}
