@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.4.6",
+      "version": "1.4.7",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.4.6.flux",
-      "sha256": "c9fa813580ffbdb4c4007084008613528eed95af7cba8b3d58bd13b28fd63ac9",
-      "notes": "bitrix-call 1.4.6: emitted-bytes counter in hb state"
+      "url": "bitrix-call-1.4.7.flux",
+      "sha256": "6ca0af3c6a1599d8f07b9b2ec756f80aa7a46f57f52d54fd28e96dd95c7cd930",
+      "notes": "bitrix-call 1.4.7: 7KB chunks under Bitrix's new ~8KB sendMessage fan-out limit (big messages silently stopped reaching other participants)"
     }
   }
 }
