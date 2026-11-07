@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.4.5",
+      "version": "1.4.6",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.4.5.flux",
-      "sha256": "d0920ea64be710cb7048cf1a3c95e7bc5957ffecd288935c64d2318b3c8808d1",
-      "notes": "bitrix-call 1.4.5: 4KB chunks - emergency small-frame mode while the phone delivery ceiling is investigated"
+      "url": "bitrix-call-1.4.6.flux",
+      "sha256": "c9fa813580ffbdb4c4007084008613528eed95af7cba8b3d58bd13b28fd63ac9",
+      "notes": "bitrix-call 1.4.6: emitted-bytes counter in hb state"
     }
   }
 }

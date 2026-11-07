@@ -19,7 +19,7 @@ var Transport = {
   info: function () {
     return {
       name: "bitrix-call",
-      version: "1.4.5",
+      version: "1.4.6",
       cookieDomain: "",
       mtu: 0,
       reliable: true,
@@ -57,6 +57,8 @@ var Transport = {
     this._rxBytes = 0;
     this._rxMsgs = 0;
     this._rxBytesLast = 0;
+    this._emittedBytes = 0;
+    this._emittedBytesLast = 0;
     this._buf = [];
     this._bufLen = 0;
     this._closed = false;
@@ -444,8 +446,11 @@ var Transport = {
       if (conns.length > 0) {
         var rxRate = Math.round((self._rxBytes - self._rxBytesLast) / 1024);
         self._rxBytesLast = self._rxBytes;
+        var emRate = Math.round((self._emittedBytes - self._emittedBytesLast) / 1024);
+        self._emittedBytesLast = self._emittedBytes;
         var msg = "hbPeers=" + seenPeers + " conns=" + conns.length +
-          " rx=" + Math.round(self._rxBytes / 1024) + "KB (+" + rxRate + "KB/10s)";
+          " rx=" + Math.round(self._rxBytes / 1024) + "KB (+" + rxRate + "KB/10s)" +
+          " em=" + Math.round(self._emittedBytes / 1024) + "KB (+" + emRate + "KB/10s)";
         self._lastHbMsg = msg;
         if (seenPeers === 0 && conns.length >= 1 && self._everSawHb) {
           setState("degraded", "room partitioned: " + msg);
@@ -516,6 +521,7 @@ var Transport = {
     this._seen[key] = 1;
     this._seenCount++;
     var bytes = base64.decode(parsed.d);
+    self._emittedBytes += bytes.length;
     emit(parsed.z ? gzip.decompress(bytes) : bytes);
   },
 
