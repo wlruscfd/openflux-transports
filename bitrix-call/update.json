@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.1.1",
+      "version": "1.1.2",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.1.1.flux",
-      "sha256": "3eb41c2e0d517f1d391616a37beda18c95346eb1498c04f3f581ca62dc8cf0f3",
-      "notes": "bitrix-call 1.1.1: dead-session detection - the tunnel stops retrying with a clear message instead of hanging in connecting"
+      "url": "bitrix-call-1.1.2.flux",
+      "sha256": "4dd111402eccc3d1244e9b4fcff9c1b91d8c4f52be45856a9420e706b76c92a0",
+      "notes": "bitrix-call 1.1.2: diagnostics in the no-sessions message"
     }
   }
 }
