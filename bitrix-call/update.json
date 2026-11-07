@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.3.1",
+      "version": "1.4.0",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.3.1.flux",
-      "sha256": "8b81b68ddf051f43f31d477e94349fd4f6cf355e56413e15976bd39332ba7de3",
-      "notes": "bitrix-call 1.3.1: dedupe identical session lines - two registrations of one guest kick each other (ws close 1000 war)"
+      "url": "bitrix-call-1.4.0.flux",
+      "sha256": "76e364666b073266d94fbd535d380b5aa34cbc863e25951f5c316b4c2da1d059",
+      "notes": "bitrix-call 1.4.0: pong watchdog - half-open sockets are detected by 45s of silence and rejoined, traffic no longer vanishes into dead connections"
     }
   }
 }
