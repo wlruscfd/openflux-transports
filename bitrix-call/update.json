@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.5.1",
+      "version": "1.5.2",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.5.1.flux",
-      "sha256": "178b77e31e7d41fcb8f5ddc81b86e7b376cfdbe00e32b78dcc990d38929f27b2",
-      "notes": "bitrix-call 1.5.1: REVERT to 7KB chunks - the 28.9 Mbps window ran on them; 4KB was the regression"
+      "url": "bitrix-call-1.5.2.flux",
+      "sha256": "582a87e173c5b86c728d246a00c55c00eb04c75ed281671aed2beb388b022189",
+      "notes": "bitrix-call 1.5.2: pc/ice states in hb diagnostics"
     }
   }
 }
