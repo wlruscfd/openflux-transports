@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.4.8",
+      "version": "1.4.9",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.4.8.flux",
-      "sha256": "10300b7ac079df37744d7c2b0eaeccfb4d7d02a77398ffbd129dee216aad2cb7",
-      "notes": "bitrix-call 1.4.8: reset the dedup map on every session break - retransmitted segments after a break must re-deliver or flows deadlock forever (the one-way crawl)"
+      "url": "bitrix-call-1.4.9.flux",
+      "sha256": "e89adc19fe250709d39bd037b63efa899abe3e90451f7be384ce98d5c00273b6",
+      "notes": "bitrix-call 1.4.9: the token slide no longer tears down live sessions - it only revives dead ones; the endless sessions-slid loop is gone"
     }
   }
 }
