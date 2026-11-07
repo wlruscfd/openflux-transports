@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.1.0",
+      "version": "1.1.1",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.1.0.flux",
-      "sha256": "1c537253237d589d6a08ff921991c374e78589e4d76d40351ab43f539c69b79f",
-      "notes": "bitrix-call 1.1.0: multi-session striping - one guest session per line, each adds ~4 Mbit/s; round-robin send, sid+seq dedupe"
+      "url": "bitrix-call-1.1.1.flux",
+      "sha256": "3eb41c2e0d517f1d391616a37beda18c95346eb1498c04f3f581ca62dc8cf0f3",
+      "notes": "bitrix-call 1.1.1: dead-session detection - the tunnel stops retrying with a clear message instead of hanging in connecting"
     }
   }
 }
