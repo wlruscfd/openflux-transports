@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.4.0",
+      "version": "1.4.1",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.4.0.flux",
-      "sha256": "76e364666b073266d94fbd535d380b5aa34cbc863e25951f5c316b4c2da1d059",
-      "notes": "bitrix-call 1.4.0: pong watchdog - half-open sockets are detected by 45s of silence and rejoined, traffic no longer vanishes into dead connections"
+      "url": "bitrix-call-1.4.1.flux",
+      "sha256": "369eb4992bb51475fa850b20ab8f1142ff6082c0e42c57f4c750dfed3658b282",
+      "notes": "bitrix-call 1.4.1: 32KB chunks at 25 msg/s - the SFU throttles fan-out by message count, not bytes (43 percent loss at 200 msg/s); zombie guests now re-register via mustCreate retry"
     }
   }
 }
