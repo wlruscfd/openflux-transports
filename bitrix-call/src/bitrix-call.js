@@ -19,7 +19,7 @@ var Transport = {
   info: function () {
     return {
       name: "bitrix-call",
-      version: "1.4.3",
+      version: "1.4.4",
       cookieDomain: "",
       mtu: 0,
       reliable: true,
@@ -54,6 +54,9 @@ var Transport = {
     this._seenCount = 0;
     this._ownSids = {};
     this._hbSeen = {};
+    this._rxBytes = 0;
+    this._rxMsgs = 0;
+    this._rxBytesLast = 0;
     this._buf = [];
     this._bufLen = 0;
     this._closed = false;
@@ -288,6 +291,8 @@ var Transport = {
       // any inbound byte proves the socket is alive; the pong watchdog compares this
       conn.lastRecv = Date.now();
       conn.sawRecv = true;
+      self._rxBytes += text.length;
+      self._rxMsgs++;
       var m;
       try { m = JSON.parse(text); } catch (e) { return; }
       if (m.joinResponse) {
@@ -437,15 +442,16 @@ var Transport = {
       }
       // surface room health without spamming: only when it changes materially
       if (conns.length > 0) {
-        var msg = "hbPeers=" + seenPeers + " conns=" + conns.length;
-        if (msg !== self._lastHbMsg) {
-          self._lastHbMsg = msg;
-          if (seenPeers === 0 && conns.length >= 1 && self._everSawHb) {
-            setState("degraded", "room partitioned: " + msg);
-          } else {
-            if (seenPeers > 0) self._everSawHb = true;
-            setState("connected", msg);
-          }
+        var rxRate = Math.round((self._rxBytes - self._rxBytesLast) / 1024);
+        self._rxBytesLast = self._rxBytes;
+        var msg = "hbPeers=" + seenPeers + " conns=" + conns.length +
+          " rx=" + Math.round(self._rxBytes / 1024) + "KB (+" + rxRate + "KB/10s)";
+        self._lastHbMsg = msg;
+        if (seenPeers === 0 && conns.length >= 1 && self._everSawHb) {
+          setState("degraded", "room partitioned: " + msg);
+        } else {
+          if (seenPeers > 0) self._everSawHb = true;
+          setState("connected", msg);
         }
       }
     }, 10000);

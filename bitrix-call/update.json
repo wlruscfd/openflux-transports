@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.4.3",
+      "version": "1.4.4",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.4.3.flux",
-      "sha256": "626735c192c54fedd4352cb5faab529a3c77476b94e95a36d0281368d0fe8e43",
-      "notes": "bitrix-call 1.4.3: fix hb parse (newMessage is an object)"
+      "url": "bitrix-call-1.4.4.flux",
+      "sha256": "6ef0b5567ce4d2c704f8ee2311430620ba131ee9f67c1074a307da8dfb4edc0b",
+      "notes": "bitrix-call 1.4.4: rx byte counters in the hb state line"
     }
   }
 }
