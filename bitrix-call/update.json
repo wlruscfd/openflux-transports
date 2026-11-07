@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.1.2",
+      "version": "1.2.0",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.1.2.flux",
-      "sha256": "4dd111402eccc3d1244e9b4fcff9c1b91d8c4f52be45856a9420e706b76c92a0",
-      "notes": "bitrix-call 1.1.2: diagnostics in the no-sessions message"
+      "url": "bitrix-call-1.2.0.flux",
+      "sha256": "51b9f815e511520ed9cd93a1529cc53a1e8246b72b1c9f076a753e21aa7b6877",
+      "notes": "bitrix-call 1.2.0: the session jar self-slides (periodic page refresh) - sessions live as long as the tunnel runs, no 4h renewal"
     }
   }
 }
