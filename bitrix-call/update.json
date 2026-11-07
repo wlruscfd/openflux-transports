@@ -3,12 +3,12 @@
   "id": "bitrix-call",
   "channels": {
     "stable": {
-      "version": "1.5.0",
+      "version": "1.5.1",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.5.0.flux",
-      "sha256": "cec667471069649bccfa97e13162870c306c2b54ca4a762f90aafb5aa3af14fa",
-      "notes": "bitrix-call 1.5.0: 4KB chunks - 7KB made 9.4KB messages which is OVER Bitrix's 8KB sendMessage limit; 4KB keeps messages at 5.6KB"
+      "url": "bitrix-call-1.5.1.flux",
+      "sha256": "178b77e31e7d41fcb8f5ddc81b86e7b376cfdbe00e32b78dcc990d38929f27b2",
+      "notes": "bitrix-call 1.5.1: REVERT to 7KB chunks - the 28.9 Mbps window ran on them; 4KB was the regression"
     }
   }
 }
