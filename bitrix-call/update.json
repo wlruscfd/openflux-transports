@@ -6,9 +6,9 @@
       "version": "1.5.2",
       "wire": 1,
       "api": 1,
-      "url": "bitrix-call-1.5.2.flux",
-      "sha256": "582a87e173c5b86c728d246a00c55c00eb04c75ed281671aed2beb388b022189",
-      "notes": "bitrix-call 1.5.2: pc/ice states in hb diagnostics"
+      "url": "bitrix-call-1.5.3.flux",
+      "sha256": "2358bcf72da27d28de1a2d0931d1e92882a12a692f46c6f577479d1be044d966",
+      "notes": "bitrix-call 1.5.3: 2KB chunks - minimal message size mode while the phone receive threshold is investigated"
     }
   }
 }
